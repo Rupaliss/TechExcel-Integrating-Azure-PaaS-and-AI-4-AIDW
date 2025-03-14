@@ -5,8 +5,8 @@ using ContosoSuitesWebAPI.Entities;
 using ContosoSuitesWebAPI.Plugins;
 using ContosoSuitesWebAPI.Services;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.SemanticKernel;
 using Microsoft.SemanticKernel.Embeddings;
+using Microsoft.SemanticKernel;
 using Microsoft.SemanticKernel.Connectors.OpenAI;
 using Microsoft.SemanticKernel.ChatCompletion;
 
@@ -156,7 +156,6 @@ app.MapPost("/Chat", async Task<string> (HttpRequest request) =>
 })
     .WithName("Chat")
     .WithOpenApi();
-
 
 // This endpoint is used to vectorize a text string.
 // We will use this to generate embeddings for the maintenance request text.

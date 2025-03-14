@@ -16,7 +16,7 @@ public class DatabaseService(string connectionString) : IDatabaseService
     /// <summary>
     /// Get all hotels from the database.
     /// </summary>
-    [KernelFunction("get_hotels")]
+    [KernelFunction]
     [Description("Get all hotels.")]
     public async Task<IEnumerable<Hotel>> GetHotels()
     {
